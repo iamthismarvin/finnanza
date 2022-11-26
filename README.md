@@ -1,46 +1,68 @@
-# finnanza
+<div align="center">
+  <img src="#" alt="finnanza" height="100">
+  <h1>Finnanza</h1>
+  <h4>An offline-first expense tracking application.</h4>
+  <p><strong>Status:</strong> Under Development</p>
+</div>
 
-This template should help get you started developing with Vue 3 in Vite.
+## Table of Contents
 
-## Recommended IDE Setup
+- [Introduction](#introduction)
+- [Tech Stack](#tech-stack)
+- [Available Platforms](#available-platforms)
+- [Notes](#notes)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Introduction
 
-## Type Support for `.vue` Imports in TS
+**Finnanza** is an open-source multi-platform expense tracking application that enables you to save and analyze expenses, generate reports, and set reminders for recurring payments. All safely stored in your offline device.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Latest Release
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+N/A
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Tech Stack
 
-## Customize configuration
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th>Frontend</th>
+				<th>Backend</th>
+				<th>Testing</th>
+				<th>CI/CD</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a></td>
+				<td><a href="https://tauri.app" target="_blank" rel="noopener noreferrer">Tauri</a></td>
+				<td><a href="https://vitest.dev/" target="_blank" rel="noopener noreferrer">Vitest</a></td>
+				<td><a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer">Github Actions</a></td>
+			</tr>
+			<tr>
+				<td><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS</a></td>
+				<td><a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer">Rust</a></td>
+				<td><a href="https://playwright.dev/" target="_blank" rel="noopener noreferrer">Playwright</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</a></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Available Platforms
 
-## Project Setup
+- Windows
+- MacOS
+- Linux
+- Android <sup><a href="#fr">fr</a></sup>
+- iOS <sup><a href="#fr">fr</a></sup>
 
-```sh
-npm install
-```
+## Notes
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+<sup><a id="fr">fr</a></sup>: Future Release
