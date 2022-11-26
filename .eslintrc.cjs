@@ -12,6 +12,16 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'all',
+      },
+    ],
+  },
   env: {
     node: true,
   },
