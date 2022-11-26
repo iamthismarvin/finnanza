@@ -1,5 +1,7 @@
 <template>
-  <main>{{ appName }} v{{ appVersion }}</main>
+  <main>
+    <p class="font-bold">{{ appName }} v{{ appVersion }}</p>
+  </main>
 </template>
 
 <script setup lang="ts">
