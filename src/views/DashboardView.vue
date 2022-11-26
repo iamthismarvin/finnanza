@@ -1,6 +1,7 @@
 <template>
   <main>
     <p class="font-bold">{{ appName }} v{{ appVersion }}</p>
+    <a href="https://playwright.dev">Go to Playwright</a>
   </main>
 </template>
 

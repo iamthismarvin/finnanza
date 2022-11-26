@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [vue()],
   test: {
     globals: true,
+    include: ['src/**/*.spec.ts'],
     environment: 'jsdom',
   },
 })
