@@ -17,7 +17,7 @@ Please include a summary of the changes and the related issue. Please also inclu
 
 If applicable, add screenshots and / or videos of visual changes made.
 
-## The following changes were tested in:
+## Where were the following changes tested in?
 
 #### Operating System
 
