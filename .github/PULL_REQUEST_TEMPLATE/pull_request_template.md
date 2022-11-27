@@ -1,6 +1,8 @@
-## Issue ticket number
+## Issue ticket number (and GitHub issue number if available)
 
-FNNZ-####
+**Ticket Number:** FNNZ-####
+
+**GitHub Issue:** #
 
 ## Description
 
