@@ -1,7 +1,7 @@
 name: Pull Request
 on:
   pull_request:
-    branches: [master, FNNZ-0009/github-action]
+    branches: [master]
 jobs:
   run-vitest:
     name: Run Vitest.
@@ -13,14 +13,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Cache dependencies.
-        id: cache
+      - name: Cache Node dependencies.
+        id: node-cache
         uses: actions/cache@v3
         with:
           path: node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json')}}
       - name: Install dependencies.
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Run Vitest unit tests.
         run: npm run test
@@ -35,16 +35,23 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Cache dependencies.
-        id: cache
+      - name: Cache Node dependencies.
+        id: node-cache
         uses: actions/cache@v3
         with:
           path: node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json')}}
       - name: Install dependencies.
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
+      - name: Cache Playwright browsers.
+        id: playwright-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
       - name: Install Playwright Browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npx playwright test
