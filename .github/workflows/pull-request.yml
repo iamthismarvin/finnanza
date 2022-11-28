@@ -50,9 +50,12 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
-      - name: Install Playwright Browsers
+      - name: Install Playwright browsers and dependencies.
         if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
+      - name: Install only Playwright dependencies.
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps
       - name: Run Playwright tests
         run: npx playwright test
       - uses: actions/upload-artifact@v3
