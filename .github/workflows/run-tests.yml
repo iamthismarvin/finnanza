@@ -19,7 +19,7 @@ jobs:
         with:
           path: node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json')}}
-      - name: Install dependencies.
+      - name: Install Node dependencies.
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Run Vitest unit tests.
@@ -41,7 +41,7 @@ jobs:
         with:
           path: node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json')}}
-      - name: Install dependencies.
+      - name: Install Node dependencies.
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Cache Playwright browsers.
@@ -56,7 +56,7 @@ jobs:
       - name: Install only Playwright dependencies.
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: npx playwright install-deps
-      - name: Run Playwright tests
+      - name: Run Playwright tests.
         run: npx playwright test
       - uses: actions/upload-artifact@v3
         if: always()
