@@ -1,7 +1,7 @@
 name: Pull Request
 on:
   pull_request:
-    branches: [master, FNNZ-0009/github-action]
+    branches: [master]
 jobs:
   run-vitest:
     name: Run Vitest.
