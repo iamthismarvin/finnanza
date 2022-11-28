@@ -47,7 +47,7 @@ N/A
 			</tr>
 			<tr>
 				<td><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">Typescript</a></td>
-				<td>&nbsp;</td>
+				<td><a href="https://www.sqlite.org/" target="_blank" rel="noopener noreferrer">SQLite</a></td>
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			</tr>
