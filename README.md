@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/iamthismarvin/finnanza/b3939b7a3c779863ac87eeae219079d3c5ad5739/public/finnanza_logo.svg" alt="finnanza" height="75" style="border-radius: 5%;">
+  <img src="public/finnanza_logo_rounded.svg" alt="finnanza" height="75" style="border-radius: 5%;">
   <h1>Finnanza</h1>
-  <h4>An offline-first expense tracking application.</h4>
+  <p><strong>An offline-first expense tracking application.</strong></p>
   <p><strong>Status:</strong> Under Development</p>
 </div>
 
